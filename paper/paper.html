@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Amazon's Tech Stack</title>
+    <link href="paperstyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Amazon's Tech Stack</h1>
+    
+</header>
+<div class="box">
+<h1>Server Scale</h1>
+<p>Amazon's server stack is vast and complex. It is not an easy task to simply explain what they use for particular tasks, because they
+simple answer is, they use a multitude of different types of servers for each task. Luckily, the servers that Amazon uses to host their website
+are the very same ones that they make available to other companies such as <a href="http://aws.amazon.com/ec2/">Netflix and Autodesk </a> on their Amazon
+Web Services program.</p>
+    <p>
+        Amazon Web Services (AWS) is a massive assortment of <a href="http://aws.amazon.com/products/">compute, storage, database, analytics, application and deployment services.</a>
+        Essentially, anything you might need a server or servers for, Amazon is able to provide. These services also have to ability to scale massively with the help of features
+        such as <a href="http://aws.amazon.com/elasticloadbalancing/details/">Elastic Load Balancing</a> and <a href="http://aws.amazon.com/ec2/">Elastic Cloud Computing (EC2)</a>.
+        These features combined allow anyone, including Amazon themselves to scale up or down the number of servers dedicated to any one task. To show just how ridiculous these
+        servers can scale, Netflix uses <a href="http://variety.com/2014/digital/news/netflix-streaming-eats-up-35-of-downstream-internet-bandwidth-usage-study-1201360914/">35% of the bandwidth</a>
+        in North America during peak hours. Netflix is hosted entirely on Amazon's servers using Amazon Web Services.
+    </p>
+
+    <h1>
+        The Actual Tech
+    </h1>
+    <h2>OS Choices</h2>
+    <p>
+        Amazon runs virtually everything on Linux machines. Primarily they run either <a href="http://aws.amazon.com/partners/redhat/">RHEL5</a> or a specific <a href="http://aws.amazon.com/amazon-linux-ami/">Amazon Linux</a> distribution.
+    </p>
+    <h2>Platforms</h2>
+    <p>
+        Amazon uses a variety of languages, but primarily uses <a href="http://highscalability.com/amazon-architecture"> C++, Perl, Mason, Java, Jboss and Servlets. </a> The website
+        makes <a href="http://highscalability.com/amazon-architecture">hundreds of calls</a> to various services on the backend to display a single web page. Most third party technologies
+        don't scale to the massive size that Amazon expects and thus <a href="http://highscalability.com/amazon-architecture">many features are created</a>, a lot of which
+        are available to the public through AWS.
+    </p>
+    <h2>
+       Computational Servers
+    </h2>
+    <p>
+        Amazon has a series of computationally focused servers which has the c4.large which as 2 virtual CPUs, and 3.75 GiB of memory. There a series of larger and larger
+        computational servers all the way up to the C4.8xlarge which has 36 virtual CPUs and 60 GiB of memory. The storage on these servers is done through <a href="http://aws.amazon.com/ebs/">Elastic Block Storage</a>
+        which stores everything on a remote server and keeps data safe. These servers feature a high frequency Intel Xeon E5-2666 v3 (Haswell) processor.
+    </p>
+    <h2>
+        Development Servers
+    </h2>
+    <p>
+        The smallest server Amazon uses is the <a href="http://aws.amazon.com/ec2/instance-types/">t2.micro</a> which has only a single CPU, and 1 GiB of memory. They also
+        offer t2.small and t2.medium which have 1 CPU with 2 GiB of memory and 2 CPUs with 4 GiB of memory respectively. These run on Intel Xeon Processors from 2.5GHz to 3.3GHz with Turbo.
+    </p>
+    <h2>
+        Database Servers
+    </h2>
+    <p>
+        Amazon has many high storage servers such as the <a href="http://aws.amazon.com/ec2/instance-types/">i2.xlarge</a> which features 4 virtual CPUs, 30.5 GiB of memory and 1x800 GB SSD. The largest
+        storage optimized server is the i2.8xlarge which as 32 virtual CPUs, 244 GiB of memory and 8x800 GB SDD. It runs on an Intel Xeon E5-2670 v2 (Ivy Bridge) processor and has
+        high random I/O performance.
+    </p>
+    <h2>
+        Data Warehouse
+    </h2>
+    <p>
+        Amazon has one server specifically optimized for high reads and writes performance with very high storage. It is the <a href="http://aws.amazon.com/ec2/instance-types/">hs1.8xlarge</a>
+        and features 16 virtual CPUs, 117 GiB of memory and 24x2000 GB of storage. It is capable of 2.6 GB per second read and write performance with 2 MiB block size.
+    </p>
+    <h2>
+        Security
+    </h2>
+    <p>
+        Amazon employs a variety of methods of security, with the most important one being on how they handle users personal information such as credit cards and addresses. Amazon
+        uses the <a href="http://money.howstuffworks.com/amazon1.htm">Netscape Secure Commerce Server</a> using the SSL protocol. Credit cards are stored in a database
+        not accessible from the internet. Amazon allows users to encrypt every piece of information that they enter about themselves.
+    </p>
+</div>
+
+s
+</body>
+</html>
